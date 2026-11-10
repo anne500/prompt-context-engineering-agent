@@ -1,5 +1,7 @@
 # 🧠 Prompt Engineering and Context Engineering for AI Agents
 
+![Project overview and reading map](assets/readme-overview.svg)
+
 🎨 [Shared architecture colors and diagram conventions](VISUAL_STYLE.md)
 
 ![Project overview: baseline, prompt, and context input modes](docs/assets/project-overview.svg)
@@ -13,7 +15,7 @@
 
 The result badges summarize saved demonstration runs, not live CI status.
 
-**🟦 Learn AI · 🟩 Show on GitHub · 🟪 Build toward PhD research · 🟠 Planned work**
+**🟦 Learn AI · 🟩 Portfolio evidence · 🟪 PhD research · 🟠 Planned work**
 
 | 🟦 Learn AI | 🟩 Portfolio evidence | 🟪 Research connection |
 | --- | --- | --- |
@@ -22,15 +24,19 @@ The result badges summarize saved demonstration runs, not live CI status.
 
 > **📍 Current checkpoint:** adapted tutorial baseline complete. Both revised mode outputs passed the saved format checks; five instruction-boundary cases passed in one run. Broader grounding and BRI experiments remain planned.
 
+<a id="explore-the-project"></a>
+
 ## 🧭 Explore the project
 
-[🧩 Architecture](#-architecture) · [📊 Results](#-observed-results) · [🛡️ Boundary checks](#-instruction-boundary-results) · [🚀 Setup](#-run-on-windows-powershell) · [🗂️ Evidence](#-evidence-files) · [🧭 Roadmap](#-learning-and-extension-roadmap) · [📖 Illustrated guide](docs/VISUAL_GUIDE.md)
+[🧩 Architecture](#architecture) · [🚀 Setup](#run-on-windows-powershell) · [🧪 Results & verification](#observed-results) · [🗂️ Evidence & guides](#evidence-files) · [🎨 Visual standard](VISUAL_STYLE.md)
 
 
 A local learning project comparing how instructions and supporting evidence
 affect responses from an Ollama-hosted language model.
 
 Built with Python, LangChain, and qwen3.5:4b.
+
+<a id="experiments"></a>
 
 ## 🧪 Experiments
 
@@ -42,6 +48,8 @@ Built with Python, LangChain, and qwen3.5:4b.
 
 The agent has no tools attached. Reference text is supplied directly;
 this project does not implement document retrieval.
+
+<a id="observed-results"></a>
 
 ## 📊 Observed Results
 
@@ -61,6 +69,8 @@ bullet-format requirement.
 
 The instruction-boundary exercise passed format and expected-answer
 checks for all five cases: two controls and three override attempts.
+
+<a id="architecture"></a>
 
 ## 🧩 Architecture
 
@@ -95,6 +105,8 @@ flowchart TD
 Each experiment supplies a fresh user message list. No checkpointer, tools, or
 retrieval pipeline is configured. The Cedar reference is manually supplied.
 
+<a id="instruction-boundary-results"></a>
+
 ## 🛡️ Instruction-boundary results
 
 ![Five saved instruction-boundary cases, all passing](docs/assets/injection-results.svg)
@@ -103,7 +115,9 @@ Two controls and three override attempts passed in one recorded run.
 The mixed request expects `No` under this exercise's explicit system policy.
 This tests direct messages, not indirect injection through retrieved content.
 
-## 🔬 Format success and evidence fidelity are separate
+<a id="format-success-and-evidence-fidelity-are-separate"></a>
+
+## 📊 Format success and evidence fidelity are separate
 
 | Observation | Status | Meaning |
 | --- | --- | --- |
@@ -114,6 +128,8 @@ This tests direct messages, not indirect injection through retrieved content.
 
 [Read the illustrated guide for prompt anatomy, validation logic, and trust boundaries](docs/VISUAL_GUIDE.md).
 
+
+<a id="run-on-windows-powershell"></a>
 
 ## 🚀 Run on Windows PowerShell
 
@@ -133,6 +149,8 @@ python .\prompt_injection_demo.py
 The validator reads the included first-run.txt and second-run.txt logs.
 It does not generate new model responses.
 
+<a id="evidence-files"></a>
+
 ## 🗂️ Evidence Files
 
 - [first-run.txt](first-run.txt): original responses.
@@ -142,7 +160,9 @@ It does not generate new model responses.
 - [Initial script](docs/baselines/prompt_context_agent_initial.py): original instructions.
 - [prompt_context_agent.py](prompt_context_agent.py): revised instructions.
 
-## 🔎 Findings and Limitations
+<a id="findings-and-limitations"></a>
+
+## ⚠️ Findings and Limitations
 
 More explicit instructions corrected the observed format failures.
 The context response reflected the supplied coverage limitation.
@@ -163,6 +183,8 @@ Manual review also found limitations:
 Project Cedar is fictional demonstration context, not an operational
 project measurement.
 
+<a id="research-connection"></a>
+
 ## 🟪 Research Connection
 
 This project motivates separate measures for instruction compliance,
@@ -170,6 +192,8 @@ evidence fidelity, and diagnosis quality in GenAI-assisted
 Build, Release, and Integration Engineering.
 
 It is a learning demonstration, not a completed thesis evaluation.
+
+<a id="learning-and-extension-roadmap"></a>
 
 ## 🧭 Learning and extension roadmap
 
@@ -184,7 +208,9 @@ It is a learning demonstration, not a completed thesis evaluation.
 | 7. Grounding evaluation | 🟠 Planned | Missing, irrelevant, and conflicting reference cases |
 | 8. BRI adaptation | 🟠 Planned | Labeled build-log and release-evidence scenarios |
 
-### 🔗 Learning sequence
+<a id="learning-sequence"></a>
+
+### 🧭 Learning sequence
 
 | Project | Connection |
 | --- | --- |
@@ -193,6 +219,8 @@ It is a learning demonstration, not a completed thesis evaluation.
 | [3. Agent Evaluation Harness](https://github.com/anne500/ai-agent-evaluation-harness) | Evaluate behavior and evaluator disagreements |
 | **4. Prompt and Context Engineering** | Improve inputs and preserve evidence of outcomes |
 | **5. Document RAG** | Next learning connection: retrieve supporting information |
+
+<a id="tutorial-attribution"></a>
 
 ## 📚 Tutorial Attribution
 
