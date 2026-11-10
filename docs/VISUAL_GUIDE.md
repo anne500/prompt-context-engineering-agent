@@ -30,12 +30,19 @@ flowchart TD
     R["🟪 Reference: fictional Cedar behavior"] --> I
     I --> M["🤖 Qwen 3.5 4B"]
     M --> A["💬 Generated answer"]
-    classDef blue fill:#DBEAFE,stroke:#2563EB,color:#172554
-    classDef purple fill:#EDE9FE,stroke:#7C3AED,color:#3B0764
-    classDef green fill:#DCFCE7,stroke:#15803D,color:#14532D
-    class S,Q,F blue
-    class R,I,M purple
-    class A green
+
+    %% Shared architecture palette: see VISUAL_STYLE.md
+    classDef default fill:#F8FAFC,stroke:#475569,color:#0F172A,stroke-width:2px;
+    classDef process fill:#DBEAFE,stroke:#2563EB,color:#172554,stroke-width:2px;
+    classDef model fill:#EDE9FE,stroke:#7C3AED,color:#3B0764,stroke-width:2px;
+    classDef store fill:#CCFBF1,stroke:#0F766E,color:#134E4A,stroke-width:2px;
+    classDef decision fill:#FEF3C7,stroke:#B45309,color:#78350F,stroke-width:2px;
+    classDef human fill:#FFEDD5,stroke:#C2410C,color:#7C2D12,stroke-width:2px;
+    classDef output fill:#DCFCE7,stroke:#15803D,color:#14532D,stroke-width:2px;
+    classDef failure fill:#FEE2E2,stroke:#B91C1C,color:#7F1D1D,stroke-width:2px;
+    class S,Q,F,I process;
+    class R,M model;
+    class A output;
 ```
 
 In the current code, question, format rules, and reference are concatenated into
@@ -79,14 +86,21 @@ flowchart TD
     B -->|No| C{"3 nonempty bullet lines AND under 80 words?"}
     C -->|Yes| Y["🟢 Format PASS"]
     C -->|No| F["🔴 Format FAIL"]
-    classDef blue fill:#DBEAFE,stroke:#2563EB,color:#172554
-    classDef green fill:#DCFCE7,stroke:#15803D,color:#14532D
-    classDef red fill:#FEE2E2,stroke:#DC2626,color:#7F1D1D
-    classDef amber fill:#FEF3C7,stroke:#B45309,color:#78350F
-    class L,P,B,C blue
-    class Y green
-    class E,F red
-    class N amber
+
+    %% Shared architecture palette: see VISUAL_STYLE.md
+    classDef default fill:#F8FAFC,stroke:#475569,color:#0F172A,stroke-width:2px;
+    classDef process fill:#DBEAFE,stroke:#2563EB,color:#172554,stroke-width:2px;
+    classDef model fill:#EDE9FE,stroke:#7C3AED,color:#3B0764,stroke-width:2px;
+    classDef store fill:#CCFBF1,stroke:#0F766E,color:#134E4A,stroke-width:2px;
+    classDef decision fill:#FEF3C7,stroke:#B45309,color:#78350F,stroke-width:2px;
+    classDef human fill:#FFEDD5,stroke:#C2410C,color:#7C2D12,stroke-width:2px;
+    classDef output fill:#DCFCE7,stroke:#15803D,color:#14532D,stroke-width:2px;
+    classDef failure fill:#FEE2E2,stroke:#B91C1C,color:#7F1D1D,stroke-width:2px;
+    class N default;
+    class L store;
+    class P,B,C decision;
+    class Y output;
+    class E,F failure;
 ```
 
 Word counting splits on whitespace and excludes leading bullet markers.
@@ -111,14 +125,19 @@ flowchart TD
     O --> E["🟪 Answer: matches authored expectation"]
     F --> R["📋 Report separate counts"]
     E --> R
-    classDef blue fill:#DBEAFE,stroke:#2563EB,color:#172554
-    classDef purple fill:#EDE9FE,stroke:#7C3AED,color:#3B0764
-    classDef green fill:#DCFCE7,stroke:#15803D,color:#14532D
-    classDef amber fill:#FEF3C7,stroke:#B45309,color:#78350F
-    class S,C blue
-    class M,E purple
-    class F green
-    class O,R amber
+
+    %% Shared architecture palette: see VISUAL_STYLE.md
+    classDef default fill:#F8FAFC,stroke:#475569,color:#0F172A,stroke-width:2px;
+    classDef process fill:#DBEAFE,stroke:#2563EB,color:#172554,stroke-width:2px;
+    classDef model fill:#EDE9FE,stroke:#7C3AED,color:#3B0764,stroke-width:2px;
+    classDef store fill:#CCFBF1,stroke:#0F766E,color:#134E4A,stroke-width:2px;
+    classDef decision fill:#FEF3C7,stroke:#B45309,color:#78350F,stroke-width:2px;
+    classDef human fill:#FFEDD5,stroke:#C2410C,color:#7C2D12,stroke-width:2px;
+    classDef output fill:#DCFCE7,stroke:#15803D,color:#14532D,stroke-width:2px;
+    classDef failure fill:#FEE2E2,stroke:#B91C1C,color:#7F1D1D,stroke-width:2px;
+    class S,C,F,E,R process;
+    class M model;
+    class O output;
 ```
 
 The mixed question expects `No` because it also requests an instruction override.
