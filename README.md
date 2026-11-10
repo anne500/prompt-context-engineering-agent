@@ -4,6 +4,9 @@
 
 🎨 [Shared architecture colors and diagram conventions](VISUAL_STYLE.md)
 
+> **📚 Tutorial foundation:** This learning project is based on [Darsh Shah's freeCodeCamp tutorial](https://www.freecodecamp.org/news/how-to-use-prompt-engineering-and-context-engineering-for-ai-agents/). See [Tutorial Acknowledgment and Attribution](#tutorial-acknowledgment-and-attribution) for the original source and the repository's extensions.
+
+
 ![Project overview: baseline, prompt, and context input modes](docs/assets/project-overview.svg)
 
 ![Python](https://img.shields.io/badge/Python-Local-3776AB?logo=python&logoColor=white)
@@ -222,7 +225,24 @@ It is a learning demonstration, not a completed thesis evaluation.
 
 <a id="tutorial-attribution"></a>
 
-## 📚 Tutorial Attribution
+<a id="tutorial-acknowledgment-and-attribution"></a>
+
+## 📚 Tutorial Acknowledgment and Attribution
+
+We acknowledge **Darsh Shah** as the author of the foundational tutorial published by **freeCodeCamp**:
+
+**[How to Use Prompt Engineering and Context Engineering for AI Agents](https://www.freecodecamp.org/news/how-to-use-prompt-engineering-and-context-engineering-for-ai-agents/)**  
+Published: July 24, 2026.
+
+| Credit and provenance | Description |
+| --- | --- |
+| 👨‍🏫 Original author | Darsh Shah |
+| 📚 Publisher | freeCodeCamp |
+| 🧱 Tutorial foundation | A local comparison of baseline, prompt-engineered, and context-engineered inputs, plus a prompt-injection exercise. |
+| 🛠️ Repository adaptations and extensions | Fictional Cedar context, revised instructions, saved original and revised outputs, automated format checks, expanded boundary cases, timing, and visual evidence. |
+
+The tutorial is credited for the original learning foundation. Repository-specific adaptations, experiments, verification records, and research connections are documented separately in the project documentation.
+
 
 Adapted from Darsh Shah's freeCodeCamp tutorial:
 [How to Use Prompt Engineering and Context Engineering for AI Agents](https://www.freecodecamp.org/news/how-to-use-prompt-engineering-and-context-engineering-for-ai-agents/).
