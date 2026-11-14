@@ -39,6 +39,21 @@ affect responses from an Ollama-hosted language model.
 
 Built with Python, LangChain, and qwen3.5:4b.
 
+## 🟦 Base tutorial
+
+The baseline compares three inputs to a local agent: a plain request, a revised prompt, and a prompt supplied with reference context. The article also includes a prompt-injection exercise. [Darsh Shah’s freeCodeCamp tutorial: How to Use Prompt Engineering and Context Engineering for AI Agents](https://www.freecodecamp.org/news/how-to-use-prompt-engineering-and-context-engineering-for-ai-agents/)
+
+## 🧩 Extensions added in Project 4
+
+| Extension | What this project added |
+| --- | --- |
+| **Cedar context and prompt revision** | Created a fictional Cedar reference and preserved original and revised outputs with timings. |
+| **Automated format checks** | Checked the three-bullet and word-limit requirements on the captured outputs. |
+| **Expanded instruction-boundary checks** | Added five cases with separate checks for output format and answer correctness. |
+| **Visual evidence** | Added diagrams, result graphics, and an illustrated guide. |
+
+See [observed results](#observed-results) and the [extension roadmap](#learning-and-extension-roadmap) for recorded and planned work.
+
 <a id="experiments"></a>
 
 ## 🧪 Experiments
