@@ -27,13 +27,17 @@ The result badges summarize saved demonstration runs, not live CI status.
 
 > **📍 Current checkpoint:** adapted tutorial baseline complete. Both revised mode outputs passed the saved format checks; five instruction-boundary cases passed in one run. Broader grounding and BRI experiments remain planned.
 
+<a id="explore-the-project"></a>
+
+## 🧭 Explore the project
+
+[🧩 Architecture](#architecture) · [🚀 Setup](#run-on-windows-powershell) · [🧪 Results & verification](#observed-results) · [🗂️ Evidence & guides](#evidence-files) · [🎨 Visual standard](VISUAL_STYLE.md)
+
 
 A local learning project comparing how instructions and supporting evidence
 affect responses from an Ollama-hosted language model.
 
 Built with Python, LangChain, and qwen3.5:4b.
-
-<a id="base-tutorial"></a>
 
 ## 🟦 Base tutorial
 
@@ -41,21 +45,14 @@ The baseline compares three inputs to a local agent: a plain request, a revised 
 
 ## 🧩 Extensions added in Project 4
 
-| Origin | Item | Scope or contribution | Verification |
-| --- | --- | --- | --- |
-| 🟦 Tutorial baseline | [Base tutorial](#base-tutorial) | A local agent tested with a plain request, revised prompt, supplied context, and a prompt-injection exercise. | [Baseline details](#base-tutorial) |
-| 🧩 Extension | **Cedar context and prompt revision** | Created a fictional Cedar reference and preserved original and revised outputs with timings. | [Evidence](#observed-results) |
-| 🧩 Extension | **Automated format checks** | Checked the three-bullet and word-limit requirements on the captured outputs. | [Evidence](#observed-results) |
-| 🧩 Extension | **Expanded instruction-boundary checks** | Added five cases with separate checks for output format and answer correctness. | [Evidence](#instruction-boundary-results) |
-| 🧩 Extension | **Visual evidence** | Added diagrams, result graphics, and an illustrated guide. | [Evidence](#evidence-files) |
+| Extension | What this project added |
+| --- | --- |
+| **Cedar context and prompt revision** | Created a fictional Cedar reference and preserved original and revised outputs with timings. |
+| **Automated format checks** | Checked the three-bullet and word-limit requirements on the captured outputs. |
+| **Expanded instruction-boundary checks** | Added five cases with separate checks for output format and answer correctness. |
+| **Visual evidence** | Added diagrams, result graphics, and an illustrated guide. |
 
 See [observed results](#observed-results) and the [extension roadmap](#learning-and-extension-roadmap) for recorded and planned work.
-
-<a id="explore-the-project"></a>
-
-## 🧭 Explore the project
-
-[🧩 Architecture](#architecture) · [🚀 Setup](#run-on-windows-powershell) · [🧪 Results & verification](#observed-results) · [🗂️ Evidence & guides](#evidence-files) · [🎨 Visual standard](VISUAL_STYLE.md)
 
 <a id="experiments"></a>
 
