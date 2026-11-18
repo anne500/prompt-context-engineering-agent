@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="343" viewBox="0 0 1080 343" role="img" aria-labelledby="title description">
+  <title id="title">Prompt and context roadmap</title>
+  <desc id="description">Compare controlled inputs, check output format, and test instruction boundaries. Plain request and constraints; Supplied reference context. Word limits and bullet counts; Five boundary cases. Missing or conflicting facts; Labeled BRI examples</desc>
+  <rect width="1080" height="343" rx="22" fill="#F8FAFC"/>
+  <path d="M22 0H1058Q1080 0 1080 22V126H0V22Q0 0 22 0" fill="#0F172A"/>
+  <g font-family="DejaVu Sans, Arial, sans-serif">
+    <text x="34" y="34" fill="#93C5FD" font-size="14" font-weight="700" letter-spacing="2">AI PROJECTS 71826 / PROJECT 04</text>
+    <text x="34" y="77" fill="#FFFFFF" font-size="36" font-weight="700">Prompt and context roadmap</text>
+    <text x="34" y="105" fill="#CBD5E1" font-size="19">Compare controlled inputs, check output format, and test instruction boundaries</text>
+    <g transform="translate(34 148)">
+      <rect width="324" height="163" rx="14" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+      <text x="20" y="31" fill="#1D4ED8" font-size="15" font-weight="700" letter-spacing="1">01 / BASELINE</text>
+      <text x="20" y="70" fill="#172554" font-size="20" font-weight="700">Compare inputs</text>
+      <text x="20" y="107" fill="#172554" font-size="17">Plain request and constraints</text>
+      <text x="20" y="137" fill="#172554" font-size="17">Supplied reference context</text>
+    </g>
+    <g transform="translate(378 148)">
+      <rect width="324" height="163" rx="14" fill="#DCFCE7" stroke="#15803D" stroke-width="2"/>
+      <text x="20" y="31" fill="#166534" font-size="15" font-weight="700" letter-spacing="1">02 / EXTENSIONS</text>
+      <text x="20" y="70" fill="#14532D" font-size="20" font-weight="700">Check saved outputs</text>
+      <text x="20" y="107" fill="#14532D" font-size="17">Word limits and bullet counts</text>
+      <text x="20" y="137" fill="#14532D" font-size="17">Five boundary cases</text>
+    </g>
+    <g transform="translate(722 148)">
+      <rect width="324" height="163" rx="14" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+      <text x="20" y="31" fill="#92400E" font-size="15" font-weight="700" letter-spacing="1">03 / PLANNED</text>
+      <text x="20" y="70" fill="#451A03" font-size="20" font-weight="700">Evaluate grounding</text>
+      <text x="20" y="107" fill="#451A03" font-size="17">Missing or conflicting facts</text>
+      <text x="20" y="137" fill="#451A03" font-size="17">Labeled BRI examples</text>
+    </g>
+  </g>
+</svg>

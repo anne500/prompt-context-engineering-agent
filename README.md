@@ -2,6 +2,16 @@
 
 ![Project overview and reading map](assets/readme-overview.svg)
 
+**🟦 Learn AI · 🟩 Portfolio evidence · 🟪 PhD research · 🟠 Planned work**
+
+Compare how prompt instructions and supplied context affect a local model’s responses.
+
+<a id="explore-the-project"></a>
+
+## 🧭 Explore the project
+
+[🟦 Base tutorial](#base-tutorial) · [🧩 Contributions](#contributions) · [🗺️ Roadmap](#learning-and-extension-roadmap) · [🏗️ Architecture](#architecture) · [🚀 Setup](#run-on-windows-powershell) · [🧪 Results & verification](#observed-results) · [🗂️ Evidence & guides](#evidence-files) · [🟪 Thesis connection](#thesis-connection) · [🎨 Visual standard](VISUAL_STYLE.md)
+
 🎨 [Shared architecture colors and diagram conventions](VISUAL_STYLE.md)
 
 > **📚 Tutorial foundation:** This learning project is based on [Darsh Shah's freeCodeCamp tutorial](https://www.freecodecamp.org/news/how-to-use-prompt-engineering-and-context-engineering-for-ai-agents/). See [Tutorial Acknowledgment and Attribution](#tutorial-acknowledgment-and-attribution) for the original source and the repository's extensions.
@@ -18,8 +28,6 @@
 
 The result badges summarize saved demonstration runs, not live CI status.
 
-**🟦 Learn AI · 🟩 Portfolio evidence · 🟪 PhD research · 🟠 Planned work**
-
 | 🟦 Learn AI | 🟩 Portfolio evidence | 🟪 Research connection |
 | --- | --- | --- |
 | Design instructions and select supporting context | Preserve original failures and revised outputs | Separate format compliance from evidence fidelity |
@@ -27,30 +35,30 @@ The result badges summarize saved demonstration runs, not live CI status.
 
 > **📍 Current checkpoint:** adapted tutorial baseline complete. Both revised mode outputs passed the saved format checks; five instruction-boundary cases passed in one run. Broader grounding and BRI experiments remain planned.
 
-<a id="explore-the-project"></a>
-
-## 🧭 Explore the project
-
-[🧩 Architecture](#architecture) · [🚀 Setup](#run-on-windows-powershell) · [🧪 Results & verification](#observed-results) · [🗂️ Evidence & guides](#evidence-files) · [🎨 Visual standard](VISUAL_STYLE.md)
-
-
 A local learning project comparing how instructions and supporting evidence
 affect responses from an Ollama-hosted language model.
 
 Built with Python, LangChain, and qwen3.5:4b.
 
+<a id="base-tutorial"></a>
+
 ## 🟦 Base tutorial
 
 The baseline compares three inputs to a local agent: a plain request, a revised prompt, and a prompt supplied with reference context. The article also includes a prompt-injection exercise. [Darsh Shah’s freeCodeCamp tutorial: How to Use Prompt Engineering and Context Engineering for AI Agents](https://www.freecodecamp.org/news/how-to-use-prompt-engineering-and-context-engineering-for-ai-agents/)
 
-## 🧩 Extensions added in Project 4
+<a id="-extensions-added-in-project-4"></a>
 
-| Extension | What this project added |
-| --- | --- |
-| **Cedar context and prompt revision** | Created a fictional Cedar reference and preserved original and revised outputs with timings. |
-| **Automated format checks** | Checked the three-bullet and word-limit requirements on the captured outputs. |
-| **Expanded instruction-boundary checks** | Added five cases with separate checks for output format and answer correctness. |
-| **Visual evidence** | Added diagrams, result graphics, and an illustrated guide. |
+<a id="contributions"></a>
+
+## 🧩 Tutorial baseline and contributions
+
+| Origin | Item | Scope or contribution | Verification |
+| --- | --- | --- | --- |
+| 🟦 Tutorial baseline | 📘 Three-mode comparison | Plain request, revised prompt, and reference context, plus a tutorial instruction-boundary exercise. | [Experiments](#experiments) |
+| 🛠️ Adaptation | 📝 Cedar context and prompt revision | Uses a fictional Cedar reference and revised constraints in the tutorial exercise. | [Recorded outputs](#observed-results) |
+| 🧩 Implemented extension | 🧪 Automated format checks | Checks the three-bullet and word-limit requirements on captured outputs. | [Format results](#observed-results) |
+| 🧩 Implemented extension | 🛡️ Expanded boundary evaluation | Five cases with separate output-format and answer checks. | [Boundary results](#instruction-boundary-results) |
+| 🟠 Planned extension | 📋 Evidence and grounding studies | Structured run records, grounding tests, and labeled BRI cases. | [Roadmap](#learning-and-extension-roadmap) |
 
 See [observed results](#observed-results) and the [extension roadmap](#learning-and-extension-roadmap) for recorded and planned work.
 
@@ -201,6 +209,8 @@ Manual review also found limitations:
 Project Cedar is fictional demonstration context, not an operational
 project measurement.
 
+<a id="thesis-connection"></a>
+
 <a id="research-connection"></a>
 
 ## 🟪 Research Connection
@@ -214,6 +224,8 @@ It is a learning demonstration, not a completed thesis evaluation.
 <a id="learning-and-extension-roadmap"></a>
 
 ## 🧭 Learning and extension roadmap
+
+![Compare controlled inputs, check output format, and test instruction boundaries](docs/assets/learning-roadmap.svg)
 
 | Stage | Status | Deliverable |
 | --- | --- | --- |
